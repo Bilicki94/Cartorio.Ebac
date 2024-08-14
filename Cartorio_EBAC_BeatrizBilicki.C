@@ -134,10 +134,11 @@ int main()
 	setlocale(LC_ALL,  "Portuguese"); // definição da linguagem
 	
 	printf("\n\t*Sejam bem vindos ao Cartório da EBAC*\n\n"); // inicio do menu
-	printf("\tEscolha a opção desejada no menu a seguir:\n\n");
+	printf("\tEscolha a opção desejada do menu a seguir:\n\n");
 	printf("\t 1º - Registrar Nomes;\n\n");
 	printf("\t 2º - Consultar Nomes;\n\n");
-	printf("\t 3º - Deletar Nomes.\n\n\n");
+	printf("\t 3º - Deletar Nomes.\n\n");
+	printf("\t 4º - Sair do sistema\n\n\n");
 	printf("ESCOLHA A OPÇÃO DESEJADA:"); // fim do menu
 	
 	
@@ -157,6 +158,11 @@ int main()
 		
 		case 3:
 		deletar(); // chamada da função
+		break;
+		
+		case 4:
+		printf("obrigada por utilizar o Cartorio EBAC!\n");
+		return 0;
 		break;
 		
 		default: // caso a opção de função não se encontre disponivel nesse sistema, é feita a leitura da frase a baixo
